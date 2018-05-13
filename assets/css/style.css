@@ -1,0 +1,236 @@
+body {
+    background-color: rgb(213, 213, 214);
+}
+
+.menuBar {
+    height: 46px;
+    width: 100%;
+    float: center;
+    position: fixed;
+    z-index: 1;
+    text-align: right;
+    color: #777777;
+    background-color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 25px 0px 0px 0px;
+    border-width: 0px 0px 0.5px 0px;
+    border-style: solid;
+    border-color: #777777;
+}
+
+.nameBox {
+    float: left;
+    position: relative;
+    position: fixed;
+    z-index: 2;
+    height: 70px;
+    width: 325px;
+    top: 0px;
+    padding: 0px 0px 0px 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-size: 26px;
+    background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.name {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+    padding: 20px 0px 0px 0px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    float: center;
+    z-index: 3;
+    width: 960px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    min-height: calc(100vh - 230px);
+    border-color: #dddddd;
+    border-width: 10px 10px 10px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+h1 {
+    color: #4aaaa5;
+    padding: 25px 0px 0px 40px;
+}
+        
+.img {
+    float: left;
+    overflow: hidden;
+    display: block;
+    width: 20%;
+    height: auto;
+    border-width: 10px 10px 10px 10px;
+    border-style: hidden;
+    margin: 10px 10px 10px 40px;
+}
+
+
+.p1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: none;
+    line-height: 40px;
+    letter-spacing: .5px;
+    z-index: 100;
+    text-align: justify;
+    text-indent: 2em;  
+    display: inline;
+    padding: 0px 50px 0px 20px;
+    color: #777777;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer {
+    clear: both;
+    height: 30px;
+    width: 100%;
+    float: center;
+    color: white;
+    background-color: #777777;
+    padding: 60px 0px 0px 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-style: solid;
+    border-color: #4aaaa5;
+    border-width: 10px 0px 0px 0px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+a:link, a:visited, a:active {
+    color: #777777;
+    text-decoration: none;
+    padding: 10px 10px;
+    
+}
+
+a:hover {
+    color: #4aaaa5;
+}
+
+a:focus {
+    text-decoration: underline;
+    color: yellowgreen;
+    text-decoration: wavy;
+    
+}
+
+.btnprimary {
+    background-color: #4aaaa5;
+    color: rebeccapurple;
+}
+
+.formgroup {
+    background-color: rebeccapurple;
+    border: solid;
+}
+
+ul {
+    color: #777777;
+    list-style: none
+}
+
+li {
+    display: block;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px;
+}
+
+#inputName {
+    width: 93%;
+}
+
+#inputEmail {
+    width: 93%;
+}
+
+#inputMessage {
+    width: 93%;
+    height: 30%;
+}
+
+.button1 {
+    background-color: #4aaaa5;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    border: 0px;
+    margin: 7px 0px 0px 3px;
+    font-size: 16px;
+}
+
+.workSample {
+    float: left;
+    width: 25%;
+    padding: 4% 4%;
+    position: relative;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+}
+
+.workSample:hover {
+    opacity: 0.3;
+}
+
+.banner:hover {
+    opacity: 1;
+}
+
+.banner {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.text {
+    background-color: #4aaaa5;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
