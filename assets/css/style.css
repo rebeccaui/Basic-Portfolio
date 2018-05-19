@@ -1,5 +1,6 @@
 body {
     background-color: rgb(213, 213, 214);
+    margin: 0;
 }
 
 .menuBar {
@@ -58,13 +59,12 @@ body {
     float: center;
     z-index: 3;
     width: 960px;
-    height: 200px;
+    max-width: 100%;
+    padding: 0 0;
     margin-left: auto;
     margin-right: auto;
     background-color: #ffffff;
-    min-height: calc(100vh - 230px);
-    border-color: #dddddd;
-    border-width: 10px 10px 10px 10px;
+    border-width: 10px 20px 10px 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
@@ -73,16 +73,25 @@ h1 {
     color: #4aaaa5;
     padding: 25px 0px 0px 40px;
 }
+
+.divider {
+    display: block;
+    border: 1px solid #777777;
+    margin: 0px;
+}
+
+#exposition {
+    padding-top: 20px;
+}
         
 .img {
     float: left;
     overflow: hidden;
     display: block;
-    width: 20%;
-    height: auto;
+    width: 200px;
     border-width: 10px 10px 10px 10px;
     border-style: hidden;
-    margin: 10px 10px 10px 40px;
+    margin: 10px 20px 10px 40px;
 }
 
 
@@ -93,13 +102,13 @@ h1 {
     line-height: 40px;
     letter-spacing: .5px;
     z-index: 100;
-    text-align: justify;
+    /*text-align: justify;*/
     text-indent: 2em;  
-    display: inline;
-    padding: 0px 50px 0px 20px;
+    display: block;
+    margin: 30px 30px 30px 30px;
     color: #777777;
+    max-width: 100%;
 }
-
 
 .clearfix::after {
     content: "";
@@ -111,13 +120,11 @@ h1 {
     clear: both;
     height: 30px;
     width: 100%;
-    float: center;
+    position: fixed;
     color: white;
     background-color: #777777;
     padding: 60px 0px 0px 0px;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    bottom: 0px; 
     border-style: solid;
     border-color: #4aaaa5;
     border-width: 10px 0px 0px 0px;
@@ -233,4 +240,29 @@ li {
     content: "";
     display: block;
     clear: both;
+}
+
+@media only screen and (max-width: 768px) {
+    /*For unknown devices*/
+    .container {
+        max-width: 100%
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .container {
+        max-width: 700px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .img {
+        display: block;
+        width: 200px;
+        margin: auto;
+        max-width: 100%;
+        float: none;
+    }
 }
