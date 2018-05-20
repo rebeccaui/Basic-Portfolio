@@ -1,13 +1,16 @@
 body {
-    background-color: rgb(213, 213, 214);
-    margin: 0;
+    background: url(../images/background.jpg);
+    margin: 60px;
+}
+
+.navBar {
+    position: fixed;
 }
 
 .menuBar {
     height: 46px;
     width: 100%;
-    float: center;
-    position: fixed;
+    float: left;
     z-index: 1;
     text-align: right;
     color: #777777;
@@ -23,8 +26,6 @@ body {
 
 .nameBox {
     float: left;
-    position: relative;
-    position: fixed;
     z-index: 2;
     height: 70px;
     width: 325px;
@@ -58,15 +59,18 @@ body {
 .container {
     float: center;
     z-index: 3;
-    width: 960px;
-    max-width: 100%;
-    padding: 0 0;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0px 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 80%;
     background-color: #ffffff;
     border-width: 10px 20px 10px 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
+}
+
+#exposition {
+    padding-top: 20px;
 }
 
 h1 {
@@ -76,19 +80,14 @@ h1 {
 
 .divider {
     display: block;
-    border: 1px solid #777777;
+    border: 1px solid #999999;
     margin: 0px;
 }
 
-#exposition {
-    padding-top: 20px;
-}
-        
 .img {
     float: left;
-    overflow: hidden;
     display: block;
-    width: 200px;
+    width: 250px;
     border-width: 10px 10px 10px 10px;
     border-style: hidden;
     margin: 10px 20px 10px 40px;
@@ -108,6 +107,7 @@ h1 {
     margin: 30px 30px 30px 30px;
     color: #777777;
     max-width: 100%;
+    text-align: justify;
 }
 
 .clearfix::after {
@@ -118,18 +118,19 @@ h1 {
 
 .footer {
     clear: both;
-    height: 30px;
+    height: 50px;
     width: 100%;
     position: fixed;
     color: white;
     background-color: #777777;
-    padding: 60px 0px 0px 0px;
+    line-height: 50px;    
     bottom: 0px; 
     border-style: solid;
     border-color: #4aaaa5;
     border-width: 10px 0px 0px 0px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    left: 0;
 
 }
 
@@ -194,8 +195,14 @@ li {
     border: none;
     padding: 5px 10px 5px 10px;
     border: 0px;
-    margin: 7px 0px 0px 3px;
+    margin: 7px 0px 13px 3px;
     font-size: 16px;
+}
+
+#portfolioRow1 {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
 }
 
 .workSample {
@@ -242,27 +249,66 @@ li {
     clear: both;
 }
 
-@media only screen and (max-width: 768px) {
-    /*For unknown devices*/
-    .container {
-        max-width: 100%
-    }
-}
-
 @media only screen and (max-width: 980px) {
+    /*For tablet devices*/
     .container {
         max-width: 700px;
         margin-left: 20px;
         margin-right: 20px;
+        float: center;
     }
 }
 
+
+@media only screen and (max-width: 768px) {
+    /*For small devices*/
+    .container {
+        max-width: 100%;
+        float: center;
+    }
+
+    .navBar {
+        margin: 0 0;
+        width: 100%;
+        left: 0;
+    }
+
+    .menuBar {
+        margin-top: 70px;
+    }
+}
+
+
+
 @media only screen and (max-width: 640px) {
+    /*For small devices*/
+    .container {
+        max-width: 100%;
+        float: center;
+    }
     .img {
         display: block;
-        width: 200px;
+        width: 50%;
         margin: auto;
         max-width: 100%;
         float: none;
     }
+
+    .nameBox {
+        width: 100%;
+        float: none;
+        font-size: 28px;
+
+    }
+
+    .navBar {
+        margin: 0 0;
+        width: 100%;
+        left: 0;
+    }
+
+    .menuBar {
+        margin-top: 70px;
+    }
+
 }
